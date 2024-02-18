@@ -3,7 +3,7 @@ import numpy as np
 
 def preprocess_image(image):
     # Resize image to the input size expected by the model
-    resized_image = cv2.resize(image, (224, 224))
+    resized_image = cv2.resize(image, (100, 100))
     # Normalize pixel values to be in the range [0, 1]
     normalized_image = resized_image / 255.0
     # Expand dimensions to match the input shape expected by the model
@@ -23,7 +23,7 @@ def classify_ripeness(image):
 
 def main():
     # Load the image
-    image_path = 'banana_image.jpg'
+    image_path = 'amogus'
     image = cv2.imread(image_path)
     
     # Apply any necessary preprocessing to the image
