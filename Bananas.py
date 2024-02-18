@@ -1,9 +1,5 @@
 import cv2
 import numpy as np
-from tensorflow.keras.models import load_model
-
-# Load the pre-trained model
-model = load_model('banana_ripeness_model.h5')
 
 def preprocess_image(image):
     # Resize image to the input size expected by the model
